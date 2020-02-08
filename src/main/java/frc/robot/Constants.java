@@ -8,6 +8,9 @@
 package frc.robot;
 
 
+import com.revrobotics.ColorSensorV3;
+
+import edu.wpi.first.wpilibj.I2C;
 import edu.wpi.first.wpilibj.XboxController;
 
 /**
@@ -26,5 +29,7 @@ public final class Constants {
 
   public static XboxController m_xbox = new XboxController(1);
 
+  public static final I2C.Port i2cPort = I2C.Port.kOnboard;
+  public static final ColorSensorV3 m_colorSensor = new ColorSensorV3(i2cPort);
     
 }
